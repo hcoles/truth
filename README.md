@@ -1,3 +1,19 @@
+What is this?
+=============
+
+This is a fork of the google truth project that has been configured for mutation testing.
+
+Pitest has been setup under a profile named 'pitest'.
+
+To run mutation testing type
+
+```
+mvn -Ppitest test
+```
+
+A report will be generated under core/target/pit-reports
+
+
 Truth
 =====
 ***We've made failure a strategy***
