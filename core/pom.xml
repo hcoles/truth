@@ -223,6 +223,7 @@
           <excludedClasses>
             <param>*AutoValue_Expect_ExpectationFailure</param>
           </excludedClasses>
+          <!-- <mutators><value>STRONGER</value></mutators> -->
         </configuration>
       </plugin>
     </plugins>
