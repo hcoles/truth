@@ -229,5 +229,37 @@
     </plugins>
   </build>
     </profile>
+    <profile>
+      <id>pitest-local</id>
+      <build>
+      <plugins>
+      <plugin>
+        <groupId>org.pitest</groupId>
+        <artifactId>pitest-maven</artifactId>
+        <version>1.1.10</version>
+        <executions>
+          <execution>
+            <id>pitest</id>
+            <phase>test</phase>
+            <goals>
+              <goal>scmMutationCoverage</goal>
+            </goals>
+          </execution>
+        </executions>  
+        <configuration>
+          <threads>2</threads>
+          <timestampedReports>false</timestampedReports>
+          <targetClasses>
+            <param>com.google.common.truth*</param>
+          </targetClasses>
+          <excludedClasses>
+            <param>*AutoValue_Expect_ExpectationFailure</param>
+          </excludedClasses>
+          <!-- <mutators><value>STRONGER</value></mutators> -->
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+    </profile>
   </profiles>
 </project>
