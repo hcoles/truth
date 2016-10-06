@@ -100,8 +100,9 @@
     </mailingList>
   </mailingLists>
   <scm>
-    <connection>scm:git:git@github.com:google/truth.git</connection>
-    <url>scm:git:git@github.com:google/truth.git</url>
+    <!-- note that the connection has been updated to point at the fork -->
+    <connection>scm:git:git@github.com:hcoles/truth.git</connection>
+    <url>scm:git:git@github.com:hcoles/truth.git</url>
     <!-- <developerConnection>scm:git:git@github.com:truth0/truth.git</developerConnection> -->
   </scm>
 </project>
