@@ -18,7 +18,6 @@
   <modules>
     <module>core</module>
   </modules>
-  <prerequisites><maven>3.0.3</maven></prerequisites>
   <developers>
     <developer>
       <id>cgruber</id>
