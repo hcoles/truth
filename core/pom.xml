@@ -215,6 +215,7 @@
           </execution>
         </executions>  
         <configuration>
+          <mutators>NEW_DEFAULTS</mutators>
           <threads>2</threads>
           <timestampedReports>false</timestampedReports>
           <targetClasses>
